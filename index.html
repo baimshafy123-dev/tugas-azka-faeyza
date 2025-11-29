@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MELLYCAT</title>
+<link rel="stylesheet" href="style final.css">
+</head>
+<body>
+
+<nav>
+    <div class="wrapper">
+        <div class="logo"><a href="#">MELLYCAT</a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Tentang</a></li>
+                <li><a href="#alamat">Masalah</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#" class="tbl-blue">pesan</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="wrapper">
+
+    <section id="beranda">
+        <img src="kucing h.png" alt="gambar beranda" />
+        <div class="kolom">
+            <p class="deskripsi">ada masalah? jangan bunuh diri! masalah dendam bisa kami bantu!</p>
+            <h2>TETAP SEMANGAT, TETAP SEHAT, TETAP INGAT KAMU BERHARGA</h2>
+            <p>Ingat tuhan, ingat tujuan hidup, ingat orang-orang yang sayang padamu.</p>
+            <p><a href="#" class="tbl-purple">Info lebih lanjut</a></p>
+        </div>
+    </section>
+
+    <section id="profil">
+        <div class="kolom">
+            <p class="deskripsi">tentang Kami</p>
+            <h2>ada masalah hidup?</h2>
+            <p>MELLYCAT adalah platform yang dibuat untuk memberikan dukungan emosional, motivasi, 
+               serta informasi positif bagi siapa pun yang sedang mengalami masa sulit.</p>
+            <p>Kami percaya setiap orang berhak merasa didengar, dihargai, dan dikuatkan.</p>
+            <p>ada dendam mendalam? masalah itu bisa kami bantu.</p>
+
+            <p><a href="#" class="tbl-purple">Info seterusnya</a></p>
+        </div>
+        <img src="detektif h.png" alt="gambar profil">
+    </section>
+
+    <section id="alamat">
+        <div class="tengah">
+            <div class="kolom">
+                <p class="deskripsi">yang kami atasi</p>
+                <h2>Jenis kasus & kelasnya</h2>
+                <p>kami telah meneliti beberapa contoh kasus dan kelasnya yang sering diadukan kepada kami.</p>
+            </div>
+
+            <div class="list-alamat">
+
+                <div class="titik-temu">
+                    <img src="2.png" alt="">
+                    <p>masalah keluarga & ekonomi</p>
+                </div>
+
+                <div class="titik-temu">
+                    <img src="3.png" alt="">
+                    <p>pembulian, preman, tawuran</p>
+                </div>
+
+                <div class="titik-temu">
+                    <img src="4.png" alt="">
+                    <p>organisasi gelap & bodong</p>
+                </div>
+
+                <div class="titik-temu">
+                    <img src="5.png" alt="">
+                    <p>orang hilang</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang">
+        <div class="tengah">
+            <div class="kolom">
+                <p class="deskripsi">Tim Kami</p>
+                <h2>Para Relawan</h2>
+            </div>
+
+            <div class="list-pekerja">
+
+                <div class="kartu-pekerja">
+                    <img src="orang 1.jpeg" alt="">
+                    <p>jimmy young</p>
+                </div>
+
+                <div class="kartu-pekerja">
+                    <img src="orang 2.jpeg" alt="">
+                    <p>washashi kishimoto </p>
+                </div>
+
+                <div class="kartu-pekerja">
+                    <img src="orang 3.jpeg" alt="">
+                    <p>zack arthur</p>
+                </div>
+
+                <div class="kartu-pekerja">
+                    <img src="orang 4.jpeg" alt="">
+                    <p>dean eja</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<div id="kontak">
+    <div class="wrapper">
+        <div class="footer">
+            
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>MELLYCAT hadir untuk menjadi ruang aman bagi semua orang.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Layanan</h3>
+                <p>Konsultasi, Motivasi Harian, pemberantas ketidakadilan, dan Komunitas Pendukung.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Bantuan</h3>
+                <p>Hubungi tim kami bila kamu membutuhkan dukungan. Masalah biaya akan diberitahukan lebih lanjut</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>lebih lanjut</h3>
+                <p>bisa hubungi nomer +62 123-4567-8902.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="copyright">
+    <div class="wrapper">
+        &copy; 2020. <b>MELLYCAT</b> All Rights Reserved.
+    </div>
+</div>
+<script>
+let lastScroll = 0;
+const navbar = document.querySelector("nav");
+
+window.addEventListener("scroll", function () {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+        // Scroll ke bawah → sembunyikan navbar
+        navbar.style.transform = "translateY(-100%)";
+    } else {
+        // Scroll ke atas → tampilkan navbar
+        navbar.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
+});
+</script>
+
+
+</body>
+</html>
